@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         BatteryLevelReceiver bt = new BatteryLevelReceiver();
         setContentView(R.layout.activity_main);
         this.registerReceiver(bt, new IntentFilter(

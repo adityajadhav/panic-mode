@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SafetyFirst</string>
+    <string name="facebook_app_id">631204477060141</string>
+
 </resources>
