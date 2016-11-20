@@ -9,9 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static com.wildhacks.safetyfirst.R.id.panicModeBtn;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
 
     TextView batteryStatusTxtView;
 
@@ -24,19 +25,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.registerReceiver(bt, new IntentFilter(
                 android.content.Intent.ACTION_BATTERY_LOW));
 
-        Button panicModeBtn = (Button) findViewById(R.id.panicModeBtn);
         Button seeContactsBtn = (Button) findViewById(R.id.seeContactsBtn);
         seeContactsBtn.setOnClickListener(this);
         batteryStatusTxtView = (TextView) findViewById(R.id.batteryStatusTxtView);
 
-        panicModeBtn.setOnClickListener(this);
+
+
     }
+
 
     @Override
     public void onClick(View view) {
 
         switch (view.getId()) {
-            case R.id.panicModeBtn: {
+            case panicModeBtn: {
                 IntentFilter ifilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
                 Intent batteryStatus = getApplicationContext().registerReceiver(null, ifilter);
 
