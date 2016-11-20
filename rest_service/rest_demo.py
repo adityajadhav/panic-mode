@@ -33,7 +33,7 @@ def detect():
         setofprediction = results['outputs'][0]['data']['concepts']
         for i in setofprediction:
               print i['name']
-              if (i['name']=="industry" or i['name']=="can" or i['name'] is "injury" or i['name'] is "accident"):
+              if (i['name']=="industry" or i['name']=="stress" or i['name'] is "injury" or i['name'] is "accident"):
                   post(); 
                   sys.exit(0)
 
