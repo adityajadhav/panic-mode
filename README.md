@@ -1,4 +1,4 @@
-# [panic-mode]
+# [panic-mode](https://github.com/adityajadhav/panic-mode)
 
 It starts from the fact that many of us do not really know what would be the right move in case of emergencies. We want to automate the actions in such scenarios where help reaches the victim as soon as possible.
 
