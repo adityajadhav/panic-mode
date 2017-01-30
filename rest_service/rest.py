@@ -24,7 +24,7 @@ app = web.application(urls, globals())
 def post():
         url='https://fcm.googleapis.com/fcm/send'
         myheaders={'Content-Type':'application/json', 
-                   'Authorization':'key=AIzaSyA5auBbUXjODOeCaM4pe6TyIDCJVwYBLy4'}
+                   'Authorization':'key=SERVER_KEY'}
         payload={
             "to": "/topics/allDevices",
               "notification": {
